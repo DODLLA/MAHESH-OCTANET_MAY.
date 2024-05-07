@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> CLUB </title>
+    <link rel="stylesheet" href="STYLE.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+  </head>
+   <body>
+    <div id="main">
+        <section class="top">
+            <div class="overlay">
+                <div class="text">
+                    <h1>FITNESS PROGRAMS</h1>
+                    <div class="image">
+                    <div class="rtext"></div>
+                     <p>Strength Training</p>
+                    <p>Cardio</p>
+                    <p>Essence</p>
+                    <p>Fitness Dance</p>
+                    </div>
+                
+                <div class="icons"><div> </div>
+                </div>
+                <nav aria-label="Social media navigation">
+                    <ul>
+                        <li><i class="ri-twitter-fill" aria-hidden="true"></i></li>
+                        <li><i class="ri-instagram-fill" aria-hidden="true"></i></li>
+                        <li><i class="ri-facebook-fill" aria-hidden="true"></i></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section class="bottom">
+            <div class="b1">
+                <div class="up"></div>
+                <h1>popular</h1>
+                <p>Incorporate strength training exercises to build muscle and increase metabolism. Focus on compound movements.</p>
+            </div>
+            <div class="b2 up">
+                <div class="up"></div>
+                <h1>latest</h1>
+                <p>Muscle & Fitness offers a comprehensive database of free workout routines. You can find plans for muscle building, fat loss, strength increase, and more.</p>
+                <div class="down">
+                    <div class="overlay"></div>
+                    <div class="b2 down">
+                        <h1></h1>
+                        <input type="image" id="gym.jpg" src="" alt="Equipment">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+CSS CODE 
+*{
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+main{
+width: 100%;
+min-height: 100vh;
+}
+.top{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url("club.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.top .overlay
+{
+position: relative;
+width: 100%;
+min-height: inherit;
+background-color: rgba(0, 0, 0, 0.518);
+}
+.text{
+    display:flex ;
+    justify-content:space-between ;
+    align-items: top;
+    position: absolute;
+    width: 100%;
+    padding: 4 10vh;
+    color: white;
+    bottom: 5%;
+}
+.text h1{
+    font-weight: 600;
+    font: size 10px;;
+    color: rgb(244, 248, 252);
+}
+.text.image{
+background-image: url("gym.jpg");
+background-size: cover;
+background-position: ce;
+height: 300px;
+ width: 220px;
+}
+.rtext{
+    display: flex;
+    width: 30%;
+    align-items: inherit;
+    color: #ffffff;
+    justify-content:space-between;
+}
+.retext p{
+    font: 15px;
+    color: #00000000;
+}
+.bottom {
+    display: flex;
+    width:100%;
+    min-height: 30vh;
+}
+.b1{
+    width:50%;
+min-height: inherit;
+background-image: url("STRENGTH.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+.b1 h1{
+    text-align: inherit;
+    padding: 30%;
+    color: #fff;
+}
+.b1 p{
+    color:rgb(244, 244, 244);
+    text-align: center;
+    padding: 20px;
+}
+.b2{
+    width: 20%;
+min-height: inherit;
+}
+.b2.up{
+width: 100%;
+ min-height: 20vh;
+ background-image: url("action.jpg");
+background-size: cover;
+background-position: center;
+}
+.b2.up h1{
+    text-align: bottom;
+    padding: 20px;
+    color: #ffffff;
+}
+.b2.up p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding:15%;
+}
+
+.b2.down.overlay {
+    position: relative;
+    width: 80%;
+    min-height: 20vh;
+    background-color: rgba(255, 0, 0, 0);
+}
+.b3{
+    width: 100%;
+    height: 100%;
+    background-image: url("STRENGTH.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color:rgba(10, 10, 10, 0.704);
+}.b3.overlay{
+    justify-content: right;
+    position: center;
+    margin-left: 100%;
+    width: 100%;
+    height:100%;
+    padding: 4vh 3vh;
+}
+.b3.overlay p{
+    color: #000000;
+    text-align: center;
+    padding: 1.2vh;
+}
+@media(max-width:70px){
+    .rtext{
+        flex-direction: column;
+    }.b3.overlay{
+        width: 100%;
+        margin-left: inherit;
+    }
+}
+@media(max-width:50px){
+    .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text h1 {
+        font-size: 5dvh;
+        color: #1d0404;
+
+    }
+    .text.image{
+        height: 200px;
+        width: 140px;
+        margin-top: 20px;
+    }
+    .rtext{
+        flex-direction: column;
+        align-items: flex-start;
+        color: #ded7d7;
+    }
+    .rtextp{
+        margin-top: 10px;
+        color: #000;
+    }
+    .icons{
+        margin-top: 50px;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1{
+        width: 100%;
+        min-height: 30vh;
+    }.b2{
+        width: 100%;
+        min-height: 20vh;
+    }
+    .b2.up{
+        min-height: 30vh;
+    
+    }.b3{
+        width:100%;
+        background-position:max-content;
+    }
+}
